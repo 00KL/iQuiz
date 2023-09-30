@@ -13,6 +13,10 @@
 		A04417692AC3113700D22E93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04417672AC3113700D22E93 /* Main.storyboard */; };
 		A044176B2AC3113800D22E93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A044176A2AC3113800D22E93 /* Assets.xcassets */; };
 		A044176E2AC3113800D22E93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A044176C2AC3113800D22E93 /* LaunchScreen.storyboard */; };
+		A04417762AC63C1C00D22E93 /* QuestaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04417752AC63C1C00D22E93 /* QuestaoViewController.swift */; };
+		A04417782AC77BB600D22E93 /* Questoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04417772AC77BB600D22E93 /* Questoes.swift */; };
+		A044177A2AC795BD00D22E93 /* DesempenhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04417792AC795BD00D22E93 /* DesempenhoViewController.swift */; };
+		A044177F2AC7A31E00D22E93 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A044177E2AC7A31E00D22E93 /* UIColor+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		A044176A2AC3113800D22E93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A044176D2AC3113800D22E93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A044176F2AC3113800D22E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A04417752AC63C1C00D22E93 /* QuestaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestaoViewController.swift; sourceTree = "<group>"; };
+		A04417772AC77BB600D22E93 /* Questoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questoes.swift; sourceTree = "<group>"; };
+		A04417792AC795BD00D22E93 /* DesempenhoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesempenhoViewController.swift; sourceTree = "<group>"; };
+		A044177E2AC7A31E00D22E93 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,44 @@
 		A04417602AC3113700D22E93 /* iQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				A044177D2AC7A26B00D22E93 /* Extensões */,
+				A044177C2AC79FCE00D22E93 /* Model */,
+				A044177B2AC79FAD00D22E93 /* ViewController */,
 				A04417612AC3113700D22E93 /* AppDelegate.swift */,
 				A04417632AC3113700D22E93 /* SceneDelegate.swift */,
-				A04417652AC3113700D22E93 /* ViewController.swift */,
 				A04417672AC3113700D22E93 /* Main.storyboard */,
 				A044176A2AC3113800D22E93 /* Assets.xcassets */,
 				A044176C2AC3113800D22E93 /* LaunchScreen.storyboard */,
 				A044176F2AC3113800D22E93 /* Info.plist */,
 			);
 			path = iQuiz;
+			sourceTree = "<group>";
+		};
+		A044177B2AC79FAD00D22E93 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A04417792AC795BD00D22E93 /* DesempenhoViewController.swift */,
+				A04417752AC63C1C00D22E93 /* QuestaoViewController.swift */,
+				A04417652AC3113700D22E93 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A044177C2AC79FCE00D22E93 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A04417772AC77BB600D22E93 /* Questoes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A044177D2AC7A26B00D22E93 /* Extensões */ = {
+			isa = PBXGroup;
+			children = (
+				A044177E2AC7A31E00D22E93 /* UIColor+.swift */,
+			);
+			name = "Extensões";
+			path = "Extensões";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +175,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A04417782AC77BB600D22E93 /* Questoes.swift in Sources */,
 				A04417662AC3113700D22E93 /* ViewController.swift in Sources */,
 				A04417622AC3113700D22E93 /* AppDelegate.swift in Sources */,
 				A04417642AC3113700D22E93 /* SceneDelegate.swift in Sources */,
+				A044177A2AC795BD00D22E93 /* DesempenhoViewController.swift in Sources */,
+				A04417762AC63C1C00D22E93 /* QuestaoViewController.swift in Sources */,
+				A044177F2AC7A31E00D22E93 /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7543DVN2J3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iQuiz/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -314,6 +356,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7543DVN2J3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iQuiz/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
